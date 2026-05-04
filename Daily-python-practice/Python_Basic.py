@@ -35,3 +35,105 @@ person = {"name": "Aditya", "age": 25}
 print(person)
 print(type(person))
 
+#operators
+a = 10
+b = 5
+
+#Arithmetic Operators
+addition = a+b #addition operation
+subtraction = a-b #subtraction operation
+multiplication = a*b #multiplication operation
+division = a/b #division operation
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+
+#comparionson operators
+is_equal = a == b #(equal to operator)
+#what it does--it check the value of a and b are equal or not if they are equal it will return true otherwise it will return false
+print("Is a equal to b?", is_equal)
+
+is_greater = a > b #(greater than operator)
+#what it does--it check the value of a is greater than b or not if it is greater it will return true otherwise it will return false
+print("Is a greater than b?", is_greater)
+
+is_less = a<b #(less than operator)
+#what it does--it check the value of a is less than b or not if it is less it will return true otherwise it will return false
+print("Is a less than b?", is_less)
+
+greater_equal = a >= b #(greater than or equal to operator)
+#what it does--it check the value of a is greater than or equal to b or not if it is greater than or equal to it will return true otherwise it will return false
+print("Is a greater than or equal to b?", greater_equal)
+
+less_equal = a <= b #(less than or equal to operator)
+#what it does--it check the value of a is less than or equal to b or not if it is less than or equal to it will return true otherwise it will return false
+print("Is a less than or equal to b?", less_equal)  
+
+#logical operators
+
+is_adult = True
+has_id = False
+can_enter = is_adult and has_id #(logical and operator)
+#what it does--it check the value of is_adult and has_id both are true
+print("Can enter?", can_enter)
+
+can_enter_or = is_adult or has_id #(logical or operator)
+#what it does--it check the value of is_adult and has_id if any one of them is true it will return true otherwise it will return false
+print("Can enter with or?", can_enter_or)
+
+
+#conditional statements
+
+#if statement
+age = 20
+if age >= 18:
+    print("You are an adult.")
+
+
+#if-else statement
+age = 16
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+#if-elif-else statement
+age = 67
+if age < 18:
+    print("You are a minor.")   
+elif age < 65:
+    print("You are an adult.")
+else:    print("You are a senior citizen.")
+
+
+#loops
+for i in range(5):#it will print from 0 to 4 because the range function is exclusive of the end value
+    print(i)
+
+for i in range(1, 11):#it will print from 1 to 10 because the range function is exclusive of the end value
+    print(i)
+
+for i in range(0, 11 ,2): #it will print with the gap of 
+    print(i)
+
+for i in range(10, 0, -1): #it will print from 10 to 1 because the range function is exclusive of the end value and it will decrement by 1
+    print(i)
+
+for fruit in fruits: #it will print each fruit in the fruits list
+    print(fruit)    
+
+for key in person: #it will print each key in the person dictionary
+    print(key)
+    print(person[key])
+
+for key, value in person.items(): #it will print each key and value in the person dictionary
+    print(key, value)
+
+age =16
+while age < 18: #it will print "You are a minor." until the age is less than 18
+    print("You are a minor.")
+    age += 1 #it will increment the age by 1 in each iteration
+
+while True: #it will print "This will run forever." indefinitely because the condition is always true
+    print("This will run forever.") 
