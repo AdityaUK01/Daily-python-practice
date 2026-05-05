@@ -135,5 +135,13 @@ while age < 18: #it will print "You are a minor." until the age is less than 18
     print("You are a minor.")
     age += 1 #it will increment the age by 1 in each iteration
 
-while True: #it will print "This will run forever." indefinitely because the condition is always true
-    print("This will run forever.") 
+"""while True: #it will print "This will run forever." indefinitely because the condition is always true
+    print("This will run forever.") """
+
+
+
+#functions
+def greet(name): #it will print "Hello, name!" where name is the argument passed to the function
+    print("Hello,", name)
+
+greet("Aditya") #it will call the greet function and pass "Aditya" as the argument
