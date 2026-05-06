@@ -145,3 +145,9 @@ def greet(name): #it will print "Hello, name!" where name is the argument passed
     print("Hello,", name)
 
 greet("Aditya") #it will call the greet function and pass "Aditya" as the argument
+
+def add(a,b): #it will return the sum of a and b
+    return a + b
+
+result = add(5, 3)#it will call the add function and pass 5 and 3 as arguments and store the result in the variable result
+print("The sum is:", result)
