@@ -151,3 +151,13 @@ def add(a,b): #it will return the sum of a and b
 
 result = add(5, 3)#it will call the add function and pass 5 and 3 as arguments and store the result in the variable result
 print("The sum is:", result)
+
+
+#classes and objects
+class Person: #it is a class named Person
+    def __init__(self, name, age): #it is a constructor method that initializes the name and age attributes of the Person class
+        self.name = name
+        self.age = age
+
+    def greet(self): #it is a method that prints a greeting message using the name attribute
+        print("Hello, my name is", self.name)   
