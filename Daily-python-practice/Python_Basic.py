@@ -172,3 +172,15 @@ def even_or_odd(num):
 print(even_or_odd(4)) #it will print "Even" because 4 is an even number
 print(even_or_odd(7)) #it will print "Odd" because 7    
 
+#Create a function that takes a list of numbers and returns the largest number in the list.
+def find_largest(numbers):
+    if not numbers: #it will check if the list is empty or not
+        return None
+    largest = numbers[0] #it will initialize the largest variable with the first element of the list
+    for num in numbers: #it will iterate through each number in the list
+        if num > largest: #it will check if the current number is greater than the largest number found so far
+            largest = num #if it is greater, it will update the largest variable with the current number
+    return largest #it will return the largest number found in the list
+
+numbers = [3, 7, 2, 9, 5]
+print("The largest number is:", find_largest(numbers)) #it will print "The largest
