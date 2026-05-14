@@ -189,5 +189,11 @@ numbers = [3, 7, 2, 9, 5]
 print("The largest number is:", find_largest(numbers)) #it will print "The largest
 
 # number is: 9" because 9 is the largest number in the list
-
-    
+#Create a function that takes a string as an argument and returns the number of vowels in the string.
+def count_vowels(s):
+    vowels = "aeiouAEIOU" #it will define a string of vowels (both lowercase and uppercase)
+    count = 0 #it will initialize the count variable to 0
+    for char in s: #it will iterate through each character in the input string
+        if char in vowels: #it will check if the current character is a vowel by checking if it is in the vowels string
+            count += 1 #if it is a vowel, it will increment the count variable by 1
+    return count #it will return the total count of vowels found in the input string
