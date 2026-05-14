@@ -197,3 +197,6 @@ def count_vowels(s):
         if char in vowels: #it will check if the current character is a vowel by checking if it is in the vowels string
             count += 1 #if it is a vowel, it will increment the count variable by 1
     return count #it will return the total count of vowels found in the input string
+input_string = "Hello, World!"
+print("Number of vowels in the string:", count_vowels(input_string)) #it will print
+# "Number of vowels in the string: 3" because there are 3 vowels (e, o, o) in the input string
