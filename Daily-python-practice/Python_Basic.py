@@ -200,3 +200,15 @@ def count_vowels(s):
 input_string = "Hello, World!"
 print("Number of vowels in the string:", count_vowels(input_string)) #it will print
 # "Number of vowels in the string: 3" because there are 3 vowels (e, o, o) in the input string
+
+#Create a class called "Rectangle" that has attributes for width and height, and a method to calculate the area of the rectangle.
+class Rectangle: #it is a class named Rectangle
+    def __init__(self, width, height): #it is a constructor method that initializes the width and height attributes of the Rectangle class
+        self.width = width
+        self.height = height
+
+    def area(self): #it is a method that calculates the area of the rectangle by multiplying the width and height attributes
+        return self.width * self.height
+    
+rect = Rectangle(5, 3) #it will create an instance of the Rectangle class with width 5 and height 3
+print("Area of the rectangle:", rect.area()) #it will call the area method of the rect object and print "Area of the rectangle: 15" because the area is calculated as width (5) multiplied by height (3) which equals 15    
