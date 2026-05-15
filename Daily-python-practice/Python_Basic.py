@@ -212,3 +212,15 @@ class Rectangle: #it is a class named Rectangle
     
 rect = Rectangle(5, 3) #it will create an instance of the Rectangle class with width 5 and height 3
 print("Area of the rectangle:", rect.area()) #it will call the area method of the rect object and print "Area of the rectangle: 15" because the area is calculated as width (5) multiplied by height (3) which equals 15    
+
+#create a class called "Circle" that has an attribute for radius and a method to calculate the circumference of the circle.
+import math #it will import the math module to use the value of pi  
+class Circle: #it is a class named Circle
+    def __init__(self, radius): #it is a constructor method that initializes the radius attribute of the Circle class
+        self.radius = radius
+
+    def circumference(self): #it is a method that calculates the circumference of the circle using the formula 2 * pi * radius
+        return 2 * math.pi * self.radius
+
+circle = Circle(5) #it will create an instance of the Circle class with radius 5
+print("Circumference of the circle:", circle.circumference()) #it will call the circumference method of the circle object and print "Circumference of the circle: 31.41592653589793" because the circumference is calculated as 2 * pi * radius which equals 2 * 3.14159 * 5
