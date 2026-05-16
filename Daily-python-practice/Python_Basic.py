@@ -224,3 +224,23 @@ class Circle: #it is a class named Circle
 
 circle = Circle(5) #it will create an instance of the Circle class with radius 5
 print("Circumference of the circle:", circle.circumference()) #it will call the circumference method of the circle object and print "Circumference of the circle: 31.41592653589793" because the circumference is calculated as 2 * pi * radius which equals 2 * 3.14159 * 5
+
+#create a class called "BankAccount" that has attributes for account holder's name and balance, and methods to deposit and withdraw money from the account.
+class BankAccount: #it is a class named BankAccount
+    def __init__(self, account_holder, balance=0): #it is a constructor method that initializes the account_holder and balance attributes of the BankAccount class. The balance attribute has a default value of 0.
+        self.account_holder = account_holder
+        self.balance = balance
+
+    def deposit(self, amount): #it is a method that allows depositing money into the account by adding the specified amount to the current balance
+        self.balance += amount
+
+    def withdraw(self, amount): #it is a method that allows withdrawing money from the account by subtracting the specified amount from the current balance if there are sufficient funds
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient funds")
+account = BankAccount("Aditya", 1000) #it will create an instance of the BankAccount class with account holder's name "Aditya" and an initial balance of 1000
+account.deposit(500) #it will call the deposit method to add 500 to the account
+print("Balance after deposit:", account.balance) #it will print "Balance after deposit: 1500" because the new balance is calculated as the initial balance (1000) plus the deposited amount (500)
+account.withdraw(200) #it will call the withdraw method to subtract 200 from the account
+print("Balance after withdrawal:", account.balance) #it will print "Balance after withdrawal: 1300" because the new balance is calculated as the previous balance (1500) minus the withdrawn amount (200)
