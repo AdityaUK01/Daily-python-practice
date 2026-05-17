@@ -244,3 +244,28 @@ account.deposit(500) #it will call the deposit method to add 500 to the account
 print("Balance after deposit:", account.balance) #it will print "Balance after deposit: 1500" because the new balance is calculated as the initial balance (1000) plus the deposited amount (500)
 account.withdraw(200) #it will call the withdraw method to subtract 200 from the account
 print("Balance after withdrawal:", account.balance) #it will print "Balance after withdrawal: 1300" because the new balance is calculated as the previous balance (1500) minus the withdrawn amount (200)
+
+#build a simple calculator that can perform basic arithmetic operations (addition, subtraction, multiplication, division) based on user input.
+def calculator():
+    operation = input("Enter the operation (+, -, *, /): ") #it will prompt the user to enter the desired arithmetic operation
+    num1 = float(input("Enter the first number: ")) #it will prompt the user to enter the first number and convert it to a float
+    num2 = float(input("Enter the second number: ")) #it will prompt the user to enter the second number and convert it to a float
+
+    if operation == '+': #it will check if the operation is addition
+        result = num1 + num2
+        print("Result:", result)
+    elif operation == '-': #it will check if the operation is subtraction
+        result = num1 - num2
+        print("Result:", result)
+    elif operation == '*': #it will check if the operation is multiplication
+        result = num1 * num2
+        print("Result:", result)
+    elif operation == '/': #it will check if the operation is division
+        if num2 != 0: #it will check if the second number is not zero to avoid division by zero error
+            result = num1 / num2
+            print("Result:", result)
+        else:
+            print("Error: Division by zero is not allowed.")
+    else:
+        print("Invalid operation. Please enter one of +, -, *, /.")
+calculator() #it will call the calculator function to execute the simple calculator program
