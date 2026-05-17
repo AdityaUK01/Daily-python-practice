@@ -269,3 +269,33 @@ def calculator():
     else:
         print("Invalid operation. Please enter one of +, -, *, /.")
 calculator() #it will call the calculator function to execute the simple calculator program
+
+#Add a feature to the calculator that allows the user to perform multiple calculations in a row until they choose to exit.
+def calculator():
+    while True: #it will create an infinite loop to allow multiple calculations until the user chooses to exit
+        operation = input("Enter the operation (+, -, *, /) or 'exit' to quit: ") #it will prompt the user to enter the desired arithmetic operation or 'exit' to quit the program
+        if operation.lower() == 'exit': #it will check if the user wants to exit the program
+            print("Exiting the calculator. Goodbye!")
+            break #it will break the loop and exit the program
+
+        num1 = float(input("Enter the first number: ")) #it will prompt the user to enter the first number and convert it to a float
+        num2 = float(input("Enter the second number: ")) #it will prompt the user to enter the second number and convert it to a float
+
+        if operation == '+': #it will check if the operation is addition
+            result = num1 + num2
+            print("Result:", result)
+        elif operation == '-': #it will check if the operation is subtraction
+            result = num1 - num2
+            print("Result:", result)
+        elif operation == '*': #it will check if the operation is multiplication
+            result = num1 * num2
+            print("Result:", result)
+        elif operation == '/': #it will check if the operation is division
+            if num2 != 0: #it will check if the second number is not zero to avoid division by zero error
+                result = num1 / num2
+                print("Result:", result)
+            else:
+                print("Error: Division by zero is not allowed.")
+        else:
+            print("Invalid operation. Please enter one of +, -, *, /, or 'exit'.")
+calculator() #it will call the calculator function to execute the enhanced simple calculator program that allows multiple calculations until the user chooses to exit
