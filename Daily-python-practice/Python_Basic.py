@@ -299,3 +299,16 @@ def calculator():
         else:
             print("Invalid operation. Please enter one of +, -, *, /, or 'exit'.")
 calculator() #it will call the calculator function to execute the enhanced simple calculator program that allows multiple calculations until the user chooses to exit
+
+#Create a function that takes a list of strings and returns a new list containing only the strings that start with a specific letter.
+def filter_strings_by_letter(strings, letter):
+    filtered_strings = [] #it will initialize an empty list to store the filtered strings
+    for string in strings: #it will iterate through each string in the input list
+        if string.startswith(letter): #it will check if the current string starts with the specified letter
+            filtered_strings.append(string) #if it does, it will add the string to the filtered_strings list
+    return filtered_strings #it will return the list of filtered strings that start with the specified letter
+input_strings = ["apple", "banana", "cherry", "avocado", "grape"] #it will define a list of input strings
+letter_to_filter = "a" #it will specify the letter to filter the strings by
+result = filter_strings_by_letter(input_strings, letter_to_filter) #it will call the filter_strings_by_letter function with the input strings and the specified letter
+print("Strings that start with '{}':".format(letter_to_filter), result) #it will
+# print "Strings that start with 'a': ['apple', 'avocado']" because those are the strings in the input list that start with the letter 'a'
