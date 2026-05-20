@@ -312,3 +312,12 @@ letter_to_filter = "a" #it will specify the letter to filter the strings by
 result = filter_strings_by_letter(input_strings, letter_to_filter) #it will call the filter_strings_by_letter function with the input strings and the specified letter
 print("Strings that start with '{}':".format(letter_to_filter), result) #it will
 # print "Strings that start with 'a': ['apple', 'avocado']" because those are the strings in the input list that start with the letter 'a'
+#Create a function that takes a list of numbers and returns a new list containing only the even numbers from the original list.
+def filter_even_numbers(numbers):
+    even_numbers = [] #it will initialize an empty list to store the even numbers
+    for num in numbers: #it will iterate through each number in the input list
+        if num % 2 == 0: #it will check if the current number is even by checking if the remainder when divided by 2 is zero
+            even_numbers.append(num) #if it is even, it will add the number to the even_numbers list
+    return even_numbers #it will return the list of even numbers filtered from the original list
+input_numbers = [1, 2, 3, 4, 5, 6] #it will define a list of input numbers
+result = filter_even_numbers(input_numbers) #it will call the filter_even_numbers function with the 
