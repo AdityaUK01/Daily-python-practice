@@ -321,3 +321,6 @@ def filter_even_numbers(numbers):
     return even_numbers #it will return the list of even numbers filtered from the original list
 input_numbers = [1, 2, 3, 4, 5, 6] #it will define a list of input numbers
 result = filter_even_numbers(input_numbers) #it will call the filter_even_numbers function with the 
+input numbers
+print("Even numbers:", result) 
+#it will print "Even numbers: [2, 4, 6]" because those are the even numbers in the input list
