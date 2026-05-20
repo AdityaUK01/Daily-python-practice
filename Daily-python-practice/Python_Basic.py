@@ -324,3 +324,10 @@ result = filter_even_numbers(input_numbers) #it will call the filter_even_number
 input numbers
 print("Even numbers:", result) 
 #it will print "Even numbers: [2, 4, 6]" because those are the even numbers in the input list
+#Create a function that takes a list of dictionaries and returns a new list containing only the dictionaries that have a specific key-value pair.
+def filter_dictionaries_by_key_value(dictionaries, key, value):
+    filtered_dictionaries = [] #it will initialize an empty list to store the filtered dictionaries
+    for dictionary in dictionaries: #it will iterate through each dictionary in the input list
+        if key in dictionary and dictionary[key] == value: #it will check if the specified key exists in the current dictionary and if its value matches the specified value
+            filtered_dictionaries.append(dictionary) #if both conditions are met, it will add the dictionary to the filtered_dictionaries list
+    return filtered_dictionaries #it will return the list of filtered dictionaries that contain the specified key-value pair
