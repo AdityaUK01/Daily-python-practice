@@ -331,3 +331,8 @@ def filter_dictionaries_by_key_value(dictionaries, key, value):
         if key in dictionary and dictionary[key] == value: #it will check if the specified key exists in the current dictionary and if its value matches the specified value
             filtered_dictionaries.append(dictionary) #if both conditions are met, it will add the dictionary to the filtered_dictionaries list
     return filtered_dictionaries #it will return the list of filtered dictionaries that contain the specified key-value pair
+input_dictionaries = [
+    {"name": "Alice", "age": 30},
+    {"name": "Bob", "age": 25},
+    {"name": "Charlie", "age": 30}
+    
