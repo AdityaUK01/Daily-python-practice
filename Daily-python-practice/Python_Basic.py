@@ -340,3 +340,5 @@ input_dictionaries = [
 key_to_filter = "age" #it will specify the key to filter the dictionaries by
 value_to_filter = 30 #it will specify the value to filter the dictionaries by
 #it will call the filter_dictionaries_by_key_value function with the input dictionaries, the specified key, and the specified value
+#create a list of dictionaries that match the specified key-value pair
+result = filter_dictionaries_by_key_value(input_dictionaries, key_to_filter, value_to_filter)   
