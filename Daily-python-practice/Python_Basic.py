@@ -343,3 +343,4 @@ value_to_filter = 30 #it will specify the value to filter the dictionaries by
 #create a list of dictionaries that match the specified key-value pair
 result = filter_dictionaries_by_key_value(input_dictionaries, key_to_filter, value_to_filter)   
 print("Dictionaries with {} = {}:".format(key_to_filter, value_to_filter), result)
+#it will print "Dictionaries with age = 30: [{'name': 'Alice', 'age': 30}, {'name': 'Charlie', 'age': 30}]" because those are the dictionaries in the input list that have the key "age" with the value 30
