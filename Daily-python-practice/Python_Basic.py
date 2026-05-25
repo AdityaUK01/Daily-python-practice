@@ -351,3 +351,5 @@ def calculate_average(numbers):
     total = sum(numbers) #it will calculate the total sum of the numbers in the list using the built-in sum function
     average = total / len(numbers) #it will calculate the average by dividing the total sum by the number of elements in the list
     return average #it will return the calculated average
+input_numbers = [10, 20, 30, 40, 50] #it will define a list of input numbers
+
