@@ -353,4 +353,6 @@ def calculate_average(numbers):
     return average #it will return the calculated average
 input_numbers = [10, 20, 30, 40, 50] #it will define a list of input numbers
 result = calculate_average(input_numbers) #it will call the calculate_average function with the input numbers
+print("Average:", result) #it will print "Average: 30.0" because the average of the input numbers is calculated as (10 + 20 + 30 + 40 + 50) / 5 which equals 150 / 5 = 30.0
+
 
