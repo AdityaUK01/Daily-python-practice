@@ -345,3 +345,9 @@ result = filter_dictionaries_by_key_value(input_dictionaries, key_to_filter, val
 print("Dictionaries with {} = {}:".format(key_to_filter, value_to_filter), result)
 #it will print "Dictionaries with age = 30: [{'name': 'Alice', 'age': 30}, {'name': 'Charlie', 'age': 30}]" because those are the dictionaries in the input list that have the key "age" with the value 30
 #Create a function that takes a list of numbers and returns the average of those numbers.
+def calculate_average(numbers):
+    if not numbers: #it will check if the input list is empty to avoid division by zero error
+        return None
+    total = sum(numbers) #it will calculate the total sum of the numbers in the list using the built-in sum function
+    average = total / len(numbers) #it will calculate the average by dividing the total sum by the number of elements in the list
+    return average #it will return the calculated average
