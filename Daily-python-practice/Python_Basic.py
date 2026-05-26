@@ -361,4 +361,5 @@ def filter_palindromes(strings):
         if string == string[::-1]: #it will check if the current string is a palindrome by comparing it to its reverse (using slicing with a step of -1)
             palindromes.append(string) #if it is a palindrome, it will add the string to the palindromes list
     return palindromes #it will return the list of palindrome strings filtered from the original list
+#it will define a list of input strings
 
