@@ -362,4 +362,8 @@ def filter_palindromes(strings):
             palindromes.append(string) #if it is a palindrome, it will add the string to the palindromes list
     return palindromes #it will return the list of palindrome strings filtered from the original list
 #it will define a list of input strings
+input_strings = ["madam", "hello", "racecar", "python", "level"]
+result = filter_palindromes(input_strings) #it will call the filter_palindromes function
+print("Palindromes:", result) #it will print "Palindromes: ['madam', 'racecar', 'level']" because those are the strings in the input list that are palindromes
+
 
