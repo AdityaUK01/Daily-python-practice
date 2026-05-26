@@ -354,5 +354,6 @@ def calculate_average(numbers):
 input_numbers = [10, 20, 30, 40, 50] #it will define a list of input numbers
 result = calculate_average(input_numbers) #it will call the calculate_average function with the input numbers
 print("Average:", result) #it will print "Average: 30.0" because the average of the input numbers is calculated as (10 + 20 + 30 + 40 + 50) / 5 which equals 150 / 5 = 30.0
-
+#create a function that takes a list of strings and returns a new list containing only the strings that are palindromes (i.e., they read the same backward as forward).
+def filter_palindromes(strings):
 
