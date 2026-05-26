@@ -356,4 +356,9 @@ result = calculate_average(input_numbers) #it will call the calculate_average fu
 print("Average:", result) #it will print "Average: 30.0" because the average of the input numbers is calculated as (10 + 20 + 30 + 40 + 50) / 5 which equals 150 / 5 = 30.0
 #create a function that takes a list of strings and returns a new list containing only the strings that are palindromes (i.e., they read the same backward as forward).
 def filter_palindromes(strings):
+    palindromes = [] #it will initialize an empty list to store the palindrome strings
+    for string in strings: #it will iterate through each string in the input list
+        if string == string[::-1]: #it will check if the current string is a palindrome by comparing it to its reverse (using slicing with a step of -1)
+            palindromes.append(string) #if it is a palindrome, it will add the string to the palindromes list
+    return palindromes #it will return the list of palindrome strings filtered from the original list
 
