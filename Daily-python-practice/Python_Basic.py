@@ -367,3 +367,4 @@ result = filter_palindromes(input_strings) #it will call the filter_palindromes 
 print("Palindromes:", result) #it will print "Palindromes: ['madam', 'racecar', 'level']" because those are the strings in the input list that are palindromes
 ##
 
+#
